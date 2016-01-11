@@ -7,6 +7,7 @@ Themes:
 * Duplicates are found by somebody making an initial suggestion for a duplicate.
   * Duplicates are handled by voting for or against the profile being a duplicate.
   * If more than half the contributors to both profiles vote in favour of there being a duplicate, a merged profile is created, by adding in all attributes and photos from both profiles. 
+  * If a profile is marked for merging, there is a list of profiles marked as duplicates... somewhere.
   * Merge profiles may disappear if people retract their votes from the duplication ratings.
   * If a merge profile exists, users are directed there for the person, unless they specifically navigate away
 * One profile can exist per user. A name has to be given. The user is strongly advised to start with some unique (recognisable) profile information.
