@@ -1,0 +1,28 @@
+{
+  "name": "crowdfile",
+  "version": "0.0.1",
+  "description": "Crowdfile, [description]",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "node_modules/.bin/babel-node node_modules/.bin/tape src/**/*-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gergling/crowdfile.git"
+  },
+  "author": "Greg Davies",
+  "contributors": [
+    {
+      "name": "Gregory Collett",
+      "email": "gregory.collett@live.co.uk"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gergling/crowdfile/issues"
+  },
+  "homepage": "https://github.com/Gergling/crowdfile#readme",
+  "devDependencies": {
+    "tape": "4.4.0"
+  }
+}
