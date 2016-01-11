@@ -1,4 +1,4 @@
-# crowdfile-backend
+# crowdfile
 
 Themes:
 * All profiles can be modified by the general public.
@@ -9,7 +9,7 @@ Themes:
   * If more than half the contributors to both profiles vote in favour of there being a duplicate, a merged profile is created, by adding in all attributes and photos from both profiles. 
   * Merge profiles may disappear if people retract their votes from the duplication ratings.
   * If a merge profile exists, users are directed there for the person, unless they specifically navigate away
-* One profile can exist per user. A name has to be given. The user is strongly advised to start with some unique profile information.
+* One profile can exist per user. A name has to be given. The user is strongly advised to start with some unique (recognisable) profile information.
 
 In theory this results in a person's actual self being publicised, but one imagines there is the possibility that gangs of people will modify profiles to troll individuals by sheer numbers. The counter to this is to campaign for more people to adjust the true profile.
 
