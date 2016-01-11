@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/Gergling/crowdfile#readme",
   "devDependencies": {
-    "tape": "^4.4.0"
+    "tape": "4.4.0"
   }
 }
