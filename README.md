@@ -21,3 +21,13 @@ I would like to implement a system whereby the profile includes 'tags'. These co
 
 How these are then processed by comparison to other profiles will require thought. One imagines the number of endorsements could be compared to the number of endorsements in the rest of the profile. This might then open the possibility of comparing personalities for the purposes of networking and making friends.
 
+Technologies:
+
+* Frontend
+ * Angularjs
+* API
+ * Node
+  * Passport
+  * Express
+ * Mongo
+
