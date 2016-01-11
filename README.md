@@ -32,3 +32,8 @@ Technologies:
   * Express
  * Mongo
 
+Task Runner:
+
+* Local build should generate things like a default login and pre-filled sample data for populating the database when it comes to manual testing.
+ * Default login can be an interceptor or equivalent in a folder called 'generated' within the frontend auth module.
+ * Pre-generated data can be stored in a folder in root adjacent to default login details.
