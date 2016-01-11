@@ -16,6 +16,7 @@ In theory this results in a person's actual self being publicised, but one imagi
 Essentially this is a more advanced identity-battleground-arena than the rest of the internet. The experiment will show whether the truth can ultimately win and people will learn to handle cyber-bullying better.
 
 Traits:
+
 I would like to implement a system whereby the profile includes 'tags'. These could represent skills, personality traits or experiences, but boil down to a single (or possibly hyphenated) keyword. People would be able to endorse a person's traits on their profile, similar to LinkedIn skills.
 
 How these are then processed by comparison to other profiles will require thought. One imagines the number of endorsements could be compared to the number of endorsements in the rest of the profile. This might then open the possibility of comparing personalities for the purposes of networking and making friends.
