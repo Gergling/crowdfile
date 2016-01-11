@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Gergling/crowdfile.git"
   },
-  "author": "",
+  "author": "Greg Davies",
+  "contributors": [{
+    "name": "Gregory Collett",
+    "email": "gregory.collett@live.co.uk"
+  }],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gergling/crowdfile/issues"
