@@ -6,7 +6,7 @@ Themes:
 * People vote on a preferred profile photo.
 * Duplicates are found by somebody making an initial suggestion for a duplicate.
   * Duplicates are handled by voting for or against the profile being a duplicate.
-  * If more than half the contributors to both profiles vote in favour of there being a duplicate, a merged profile is created, by adding in all attributes and photos from both profiles. 
+  * If more than half the contributors to both profiles vote in favour of there being a duplicate, a merged profile is created, by adding in all attributes and photos from both profiles.
   * If a profile is marked for merging, there is a list of profiles marked as duplicates... somewhere.
   * Merge profiles may disappear if people retract their votes from the duplication ratings.
   * If a merge profile exists, users are directed there for the person, unless they specifically navigate away
@@ -38,3 +38,12 @@ Task Runner:
  * Default login can be an interceptor or equivalent in a folder called 'generated' within the frontend auth module.
  * Pre-generated data can be stored in a folder in root adjacent to default login details.
 * Templating generates an index.html or injects javascript into it when new source files are created.
+
+# Development
+
+* `$ npm install`
+* `$ npm run dev`
+
+# Testing
+
+* `$ npm run test`
