@@ -5,7 +5,7 @@
   "main": "./src/server.js",
   "scripts": {
     "dev": "NODE_ENV=development node ./src/index",
-    "test": "node_modules/.bin/babel-node node_modules/.bin/tape spec/**/*.js",
+    "test": "node_modules/.bin/babel-node node_modules/.bin/tape spec/**/*.js"
   },
   "repository": {
     "type": "git",
