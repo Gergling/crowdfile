@@ -1,14 +1,21 @@
 var webpack = require('webpack');
 var path = require('path');
+var autoprefixer = require('autoprefixer');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var isDev = process.env.NODE_ENV !== 'production';
 
 var plugins = isDev ?
   [
-    new webpack.NoErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      inject: 'body'
+    })
   ] :
   [
+    new webpack.NoErrorsPlugin(),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false
@@ -43,11 +50,24 @@ module.exports = {
       {
         test: /\.styl|\.css$/,
         loader: ExtractTextPlugin.extract('css-loader')
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+        loader: 'file'
+      },
+      {
+        test: /\.html$/,
+        loader: 'raw'
       }
     ]
   },
+  postcss: [
+    autoprefixer({
+      browsers: ['last 5 version']
+    })
+  ],
   plugins: plugins.concat([
-    new ExtractTextPlugin('main.css'),
+    new ExtractTextPlugin('[name].css'),
     new webpack.ProvidePlugin({
       'fetch': 'exports?global.fetch!whatwg-fetch',
     }),
