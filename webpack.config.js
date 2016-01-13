@@ -35,6 +35,15 @@ module.exports = {
         ],
         test: /\.js?$/, // Only run `.js` files through Babel
       },
+      {
+        test: /\.json?$/,
+        exclude: /node_modules/,
+        loader: 'json'
+      },
+      {
+        test: /\.styl|\.css$/,
+        loader: ExtractTextPlugin.extract('css-loader')
+      }
     ]
   },
   plugins: plugins.concat([
