@@ -1,5 +1,5 @@
 module.exports = {
-  production: (process.env.NODE_ENV === 'production'),
+  isProduction: (process.env.NODE_ENV === 'production'),
 
   ports: {
     frontendServer: 3000,
