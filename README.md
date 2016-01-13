@@ -39,11 +39,17 @@ Task Runner:
  * Pre-generated data can be stored in a folder in root adjacent to default login details.
 * Templating generates an index.html or injects javascript into it when new source files are created.
 
-# Development
+## Prerequisites
+
+A computer with:
+* NodeJS
+* MongoDB
+
+## Development
 
 * `$ npm install`
 * `$ npm run dev`
 
-# Testing
+## Testing
 
 * `$ npm run test`
