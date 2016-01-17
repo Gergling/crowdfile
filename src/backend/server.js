@@ -44,3 +44,4 @@ app.listen(3000, function() {
 })
 
 // TODO: Enable compression... come on greg that should have been a priority
+// TODO: Enable serving over https
