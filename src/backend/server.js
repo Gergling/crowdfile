@@ -42,3 +42,5 @@ proxy.on('error', function(error) {
 app.listen(3000, function() {
   console.log('Backend running on port 3000'); // move port to config...
 })
+
+// TODO: Enable compression... come on greg that should have been a priority

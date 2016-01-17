@@ -32,6 +32,10 @@ module.exports = {
         exclude: path.resolve(__dirname, 'node_modules')
       },
       {
+        test: /\.css$/,
+        loader: 'style!css!postcss'
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader'
       },
