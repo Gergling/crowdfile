@@ -47,6 +47,7 @@
   "dependencies": {
     "angular": "1.4.8",
     "body-parser": "^1.14.2",
+    "compression": "^1.6.0",
     "errorhandler": "^1.4.2",
     "express": "4.13.3",
     "lodash": "4.0.0",
