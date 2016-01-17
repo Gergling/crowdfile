@@ -1,8 +1,8 @@
-# crowdfile
+# Crowdfile
 
 [![Circle CI](https://circleci.com/gh/Gergling/crowdfile.svg?style=svg)](https://circleci.com/gh/Gergling/crowdfile)
 
-Themes:
+## Themes:
 * All profiles can be modified by the general public.
 * Everyone logs in as themselves.
 * People vote on a preferred profile photo.
