@@ -46,8 +46,12 @@
   },
   "dependencies": {
     "angular": "1.4.8",
+    "body-parser": "^1.14.2",
+    "errorhandler": "^1.4.2",
     "express": "4.13.3",
     "lodash": "4.0.0",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
     "whatwg-fetch": "0.10.1"
   }
 }

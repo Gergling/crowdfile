@@ -1,6 +1,10 @@
-var express = require('express');
-var path = require('path');
-var httpProxy = require('http-proxy');
+var methodOverride = require('method-override');
+var errorhandler   = require('errorhandler');
+var bodyParser     = require('body-parser');
+var express        = require('express');
+var logger         = require('morgan');
+var path           = require('path');
+var httpProxy      = require('http-proxy');
 
 // should probably move the below line into a helper but oh well..
 var isDevelopment = process.env.NODE_ENV !== 'production';
@@ -10,7 +14,16 @@ var app = express();
 
 var publicPath = path.resolve(__dirname, '..', 'public');
 
+
+// Setup basic middleware
+app.use(logger('dev'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(methodOverride());
+
 if (isDevelopment) {
+  app.use(errorhandler());
+
   app.all(['/assets/*', '*.hot-update.json'], function(req, res) {
     proxy.web(req, res, {
       target: 'http://localhost:3001'
@@ -20,7 +33,6 @@ if (isDevelopment) {
 
 app.use(express.static(publicPath));
 
-// a test...
 app.get('/api', function(req, res) {
   res.json({
     error: false,
@@ -33,7 +45,6 @@ app.get('/api', function(req, res) {
 app.get('/*', function(req, res) {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
-
 
 proxy.on('error', function(error) {
   console.log('Could not connect to proxy');
