@@ -34,15 +34,9 @@ if (isDevelopment) {
 
 app.use(express.static(publicPath));
 
-app.get('/api', function(req, res) {
-  res.json({
-    error: false,
-    body: 'you made it :)'
-  });
-})
+app.use('/api', require('./routing'));
 
-// history api routing rewrite... any backend routes must be
-// defined above this point! !!!!!! IMPORTANT !!!!!!
+// routes defined above this point! !!!!!! IMPORTANT !!!!!!
 app.get('/*', function(req, res) {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
