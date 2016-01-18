@@ -1,6 +1,6 @@
 # Crowdfile
 
-[![Circle CI](https://circleci.com/gh/Gergling/crowdfile.svg?style=svg)](https://circleci.com/gh/Gergling/crowdfile)
+[![Circle CI](https://circleci.com/gh/Gergling/crowdfile/tree/develop.svg?style=svg)](https://circleci.com/gh/Gergling/crowdfile/tree/develop)
 
 ## Themes:
 * All profiles can be modified by the general public.
