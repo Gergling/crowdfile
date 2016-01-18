@@ -1,3 +1,5 @@
-angular.module('application').config(function () {
+import angular from 'angular';
+
+angular.module('application').config(() => {
   // Various state-ui routing
 });
